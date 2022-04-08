@@ -19,7 +19,9 @@ def generarLog(addr, fsize, tiempo, fname, id_cliente):
 
     fActual = datetime.now()
     log = f"{fActual.year}-{fActual.month}-{fActual.day}-{fActual.hour}-{fActual.minute}-{fActual.second}-Cliente{id_cliente}-log.txt"
-
+    fp = os.path.join('.', 'logs', 'servidor')
+    if not os.path.exists(fp):
+        os.mkdir(fp)
     fileLog = open(f"logs/servidor/{log}", "x")
 
     fileLog.write("Log {}\n".format(fActual))

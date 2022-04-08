@@ -68,7 +68,8 @@ def operate(server, addr, path, nThreads, numCliente):
 
 
 def main():
-    host_ip = "localhost"
+    #host_ip = "localhost"
+    host_ip = "192.168.58.128"
     port = 8081
 
     print("[*] Iniciando servidor ...")

@@ -4,8 +4,8 @@ import socket
 import threading
 import time
 from datetime import datetime
-#host_ip = "127.0.0.1"
-host_ip = "localhost" #TODO
+#host_ip = "localhost" #TODO
+host_ip = "192.168.58.128"
 port = 8081 #TODO
 
 num_clientes = int(input('Ingrese la cantidad de clientes que desea crear, recuerde que el servidor quedara esperando '
